@@ -7,6 +7,10 @@ Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "HighDensityDeployment", "Hi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldService", "HelloWorldService\HelloWorldService.csproj", "{885F1E19-9886-4370-9C6B-D7A8460BED48}"
 EndProject
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "AppendService", "AppendService\AppendService.sfproj", "{667A5FF6-F2DD-4883-B94B-2428C4D299D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreHelloWorldService", "MoreHelloWorldService\MoreHelloWorldService.csproj", "{92F1482A-38BC-4683-87FC-1CA8A021BC68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -23,6 +27,16 @@ Global
 		{885F1E19-9886-4370-9C6B-D7A8460BED48}.Debug|x64.Build.0 = Debug|x64
 		{885F1E19-9886-4370-9C6B-D7A8460BED48}.Release|x64.ActiveCfg = Release|x64
 		{885F1E19-9886-4370-9C6B-D7A8460BED48}.Release|x64.Build.0 = Release|x64
+		{667A5FF6-F2DD-4883-B94B-2428C4D299D6}.Debug|x64.ActiveCfg = Debug|x64
+		{667A5FF6-F2DD-4883-B94B-2428C4D299D6}.Debug|x64.Build.0 = Debug|x64
+		{667A5FF6-F2DD-4883-B94B-2428C4D299D6}.Debug|x64.Deploy.0 = Debug|x64
+		{667A5FF6-F2DD-4883-B94B-2428C4D299D6}.Release|x64.ActiveCfg = Release|x64
+		{667A5FF6-F2DD-4883-B94B-2428C4D299D6}.Release|x64.Build.0 = Release|x64
+		{667A5FF6-F2DD-4883-B94B-2428C4D299D6}.Release|x64.Deploy.0 = Release|x64
+		{92F1482A-38BC-4683-87FC-1CA8A021BC68}.Debug|x64.ActiveCfg = Debug|x64
+		{92F1482A-38BC-4683-87FC-1CA8A021BC68}.Debug|x64.Build.0 = Debug|x64
+		{92F1482A-38BC-4683-87FC-1CA8A021BC68}.Release|x64.ActiveCfg = Release|x64
+		{92F1482A-38BC-4683-87FC-1CA8A021BC68}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -40,19 +40,19 @@ namespace MoreHelloWorldService
         /// <param name="cancellationToken">Canceled when Service Fabric needs to shut down this service replica.</param>
         protected override async Task RunAsync(CancellationToken cancellationToken)
         {
-            ConnectionMultiplexer connection = ConnectionMultiplexer.Connect(ConfigurationManager.AppSettings["connection"]);
-            IDatabase cache = connection.GetDatabase();
-            var rnd = new Random();
-            Thread.Sleep(TimeSpan.FromSeconds(rnd.Next(1, 40)));
-            if (cache.KeyExists("instanceCount"))
-            {
-                var value = (int)cache.StringGet("instanceCount") + 1;
-                cache.StringSet("instanceCount", value);
-            }
-            else
-            {
-                cache.StringSet("instanceCount", 1);
-            }
+            //ConnectionMultiplexer connection = ConnectionMultiplexer.Connect(ConfigurationManager.AppSettings["connection"]);
+            //IDatabase cache = connection.GetDatabase();
+            //var rnd = new Random();
+            //Thread.Sleep(TimeSpan.FromSeconds(rnd.Next(1, 40)));
+            //if (cache.KeyExists("instanceCount"))
+            //{
+            //    var value = (int)cache.StringGet("instanceCount") + 1;
+            //    cache.StringSet("instanceCount", value);
+            //}
+            //else
+            //{
+            //    cache.StringSet("instanceCount", 1);
+            //}
 
             cancellationToken.WaitHandle.WaitOne();
         }
